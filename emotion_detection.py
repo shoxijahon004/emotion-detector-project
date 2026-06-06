@@ -3,7 +3,7 @@ import json
 
 def emotion_detector(text_to_analyze):
     # Rasmiy va to'g'ri URL manzil
-    url = 'https://skills.network'
+    url = 'https://github.com/shoxijahon004/emotion-detector-project'
     
     # API sarlavhasi
     headers = {"grpc-metadata-mm-model-id": "emotion_aggregated-workflow_lang_en_stock"}

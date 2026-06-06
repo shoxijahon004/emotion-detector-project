@@ -8,7 +8,8 @@ def emot_detector():
     text_to_analyze = request.args.get('textToAnalyze')
     response = emotion_detector(text_to_analyze)
     
-    if response is None:
+    # Bo'sh yoki None qiymat kelganda xatolik xabarini qaytarish
+    if response is None or response['dominant_emotion'] is None:
         return "Invalid text! Please try again."
         
     return (
